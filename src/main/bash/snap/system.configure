@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Snap client software seems to be licensed under GPL 3: https://en.wikipedia.org/wiki/Snappy_(package_manager)
+package.install snap
+package.install snapd
+
+if [ -x "$(command -v setenforce)" ]; then # Check if SElinux is present.
+	sudo ln -s /var/lib/snapd/snap /snap # Enable support for --classic.
+fi
+
+sleep 3
+
+sudo systemctl enable snapd
+sudo systemctl start snapd
+
+if systemctl is-active --quiet snapd; then
+	echo "Snapd is not running." | systemd-cat -p emerg
+fi

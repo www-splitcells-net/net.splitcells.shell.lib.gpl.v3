@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sudo snap install $1 # You can search for packages at "https://snapcraft.io/store".
