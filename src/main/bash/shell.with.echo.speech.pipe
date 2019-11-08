@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-echo Use it like '"'. shell.with.echo.speech'"' in order to be able to abort speach via '"'Ctrl+C'"'.
+
+# FIXME Sometimes espeak does not end, after the shell is closed.
+
+echo Use it like '"'. shell.with.echo.speech.pipe'"' in order to be able to abort speach via '"'Ctrl+C'"'.
 echo In this case you will have to exit the shell and create a new one, in order to reanable the speach.
 
 echo In order to find out if a command is still executing via sound, double the tab key.

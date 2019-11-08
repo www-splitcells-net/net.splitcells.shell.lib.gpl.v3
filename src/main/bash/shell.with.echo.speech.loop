@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+function processOutput {
+	echo $@
+	speak $@
+	}
+export -f processOutput
+while read -e -p "$PS1" line
+do
+	# TODO Non blocking speech.
+	eval $line | xargs -I {} bash -c 'processOutput "$@"' _ {}
+done
