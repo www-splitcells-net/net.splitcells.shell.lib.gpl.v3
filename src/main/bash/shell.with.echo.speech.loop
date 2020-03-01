@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 function processOutput {
 	echo $@
-	speak $@
+	speak "$@"
 	}
 export -f processOutput
 while read -e -p "$PS1" line
