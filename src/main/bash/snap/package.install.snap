@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Snap client software seems to be licensed under GPL 3: https://en.wikipedia.org/wiki/Snappy_(package_manager)
-package.install snap
 package.install snapd
 
 if [ -x "$(command -v setenforce)" ]; then # Check if SElinux is present.
