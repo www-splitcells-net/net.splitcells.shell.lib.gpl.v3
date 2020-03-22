@@ -12,5 +12,5 @@ sudo systemctl enable snapd
 sudo systemctl start snapd
 
 if systemctl is-active --quiet snapd; then
-	echo "Snapd is not running." | systemd-cat -p emerg
+	echo.error "Snapd is not running." | systemd-cat -p emerg
 fi
