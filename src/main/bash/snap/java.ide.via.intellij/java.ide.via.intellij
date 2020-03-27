@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-intellij-idea-community & disown
+intellij-idea-community
