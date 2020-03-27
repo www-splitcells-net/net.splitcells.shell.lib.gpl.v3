@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# TODO Only allow this script for Ubuntu.
+# Allow usage of docker without root rights.
+	sudo addgroup --system docker
+	sudo adduser $USER docker
+	newgrp docker
+sudo snap install docker
+	# TODO This only was tested in Ubuntu.
+	# Docker should be installed via "package.install docker" or "package.install.docker" for system specific installation scripts.
+	# Create docker installation script for Ubuntu, because "sudo apt install docker" installs other software.
+	# Docker can be installed via "sudo apt install docker.io" or via "sudo snap install docker".
+sudo docker pull phoronix/pts
+# Run tests automatically and upload results.
+	# TODO https://www.phoronix-test-suite.com/documentation/phoronix-test-suite.html
+	# TODO sudo docker run -it phoronix/pts
+	# TODO Run random tests command: run-random-tests
+	# TODO Do not do file system tests on SSDs.
