@@ -3,7 +3,7 @@
 package.install snapd
 
 if [ -x "$(command -v setenforce)" ]; then # Check if SElinux is present.
-	sudo ln -s /var/lib/snapd/snap /snap # Enable support for --classic.
+	sudo.at.current.env 'link.symbolic.from /snap to /var/lib/snapd/snap' # Enable support for --classic.
 fi
 
 sleep 3
