@@ -1,2 +1,8 @@
 #!/usr/bin/env bash
+if [ -d "/snap/bin" ]
+then
+	# This is sometimes required in Sway if gnome-terminal is used.
+	export PATH=$PATH:/snap/bin
+fi
+export _JAVA_AWT_WM_NONREPARENTING=1
 intellij-idea-community
