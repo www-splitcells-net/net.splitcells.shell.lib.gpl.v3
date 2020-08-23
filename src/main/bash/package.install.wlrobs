@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+# Based on https://hg.sr.ht/~scoopta/wlrobs
 # Tested on Ubuntu 20.04.1 LTS.
 mkdir ~/opt
 	cd ~/opt
@@ -11,8 +12,9 @@ mkdir ~/opt
 	package.install libwayland-dev
 	package.install libobs-dev
 	package.install libobs-dev
-	package.install libdrm-dev
-	package.install libegl-dev
+	# Dependencies needed if not forked OBS is used.
+		package.install libdrm-dev
+		package.install libegl-dev
 # Build wlrobs.
 	meson build
   	ninja -C build
