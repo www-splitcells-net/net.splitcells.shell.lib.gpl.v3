@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+export QT_QPA_PLATFORM=xcb
+	# Required if Sway is used and OBS is not using EGL backend.
+	# See "https://hg.sr.ht/~scoopta/wlrobs" for more details.
+obs
