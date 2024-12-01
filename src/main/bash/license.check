@@ -3,4 +3,8 @@
 # SPDX-FileCopyrightText: Contributors To The `net.splitcells.*` Projects
 #
 # Use of GPL-2.0-or-later should be OK in this context: https://www.gnu.org/licenses/gpl-faq.html#MereAggregation
+#
+# If this command outputs `installing reuse` and than never ends,
+# consider deleting `~/.cache/pipx`, `.local/share/pipx` and `.local/state/pipx`.
+# On the other hand, installing reuse via pipx just takes really long.
 pipx run reuse lint
