@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+# SPDX-License-Identifier: GPL-3.0-only
+# SPDX-FileCopyrightText: Contributors To The `net.splitcells.*` Projects
+#
 # Based on https://hg.sr.ht/~scoopta/wlrobs
 # Tested on Ubuntu 20.04.1 LTS.
 package.install obs-studio

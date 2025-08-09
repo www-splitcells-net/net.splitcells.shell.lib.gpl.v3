@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
+# SPDX-License-Identifier: GPL-3.0-only
 # SPDX-FileCopyrightText: Contributors To The `net.splitcells.*` Projects
 #
 # Use of GPL-2.0-or-later should be OK in this context: https://www.gnu.org/licenses/gpl-faq.html#MereAggregation

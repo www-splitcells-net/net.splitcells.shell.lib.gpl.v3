@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: GPL-3.0-only
+# SPDX-FileCopyrightText: Contributors To The `net.splitcells.*` Projects
 installationLog=$(sudo snap install $1) # You can search for packages at "https://snapcraft.io/store".
 exitCode=$?
 echo.error $installationLog

@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+# SPDX-License-Identifier: GPL-3.0-only
+# SPDX-FileCopyrightText: Contributors To The `net.splitcells.*` Projects
 exec 3>&1  ## Store original stdout to fd 3.
 exec 4> >(exec tee >(exec xargs -n 1 -d '\n' espeak -- &>/dev/null))  ## Open "espeak" as fd 4.
 exec >&4  ## Redirect stdout to "espeak".
